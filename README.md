@@ -20,12 +20,13 @@ pip install -r requirements.txt
 
 Open two terminals.
 
-**Terminal 1 - start the simulation:**
+**In GitBash - start the simulation:**
 ```bash
+cd bikezelo
 bash bin/simulate.sh
 ```
 
-**Terminal 2 - start the app:**
+**In Terminal - start the app:**
 ```bash
 python app.py
 ```
