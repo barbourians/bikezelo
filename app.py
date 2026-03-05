@@ -8,9 +8,11 @@ import time
 
 app = Flask(__name__)
 
-CSV_PATH = "data/orders.csv"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+CSV_PATH = os.path.join(BASE_DIR, "data", "orders.csv")
+
 TICKER_ROWS = 50  # number of rows to show in the ticker
- 
+
 
 def read_csv(retries=3):
     for attempt in range(retries):
